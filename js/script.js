@@ -29,7 +29,7 @@ if(playerInput == '1'){
 else if(playerInput == '2'){
   playerMove = 'papier';
 }
-else{
+else if(playerInput == '3'){
   playerMove = 'nożyce';
 }
 
@@ -59,7 +59,7 @@ if( computerMove == 'kamień' && playerMove == 'papier')
   {
     printMessage('Niedozwolona wartość');
   }
-  
+
 else 
 {
 printMessage('Ja wygrywam!');
