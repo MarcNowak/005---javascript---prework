@@ -20,9 +20,11 @@ function getMoveName(argMoveId){
 function displayResult(argComputerMove, argPlayerMove){
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
-  if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
+  if( argComputerMove == 'kamień' && argPlayerMove == 'papier')
+  {
     printMessage('Ty wygrywasz!');
-  } 
+  }
+
   else if(argComputerMove == 'papier' && argPlayerMove == 'nożyce')
   {
     printMessage('Ty wygrywasz!');
@@ -37,6 +39,7 @@ function displayResult(argComputerMove, argPlayerMove){
   {
     printMessage('Remis!!!');
   }
+  
   else {
     printMessage('Tym razem przegrywasz :(');
   }
@@ -54,7 +57,7 @@ printMessage('Ruch komputera to: ' + argComputerMove);
 
 console.log('Wywołanie: Wybór liczby przez gracza')
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-console.log('Wywołanie: Gracz wpisał: ' + playerInput);
+console.log('Wywołanie: Gracz wybrał: ' + playerInput);
 
 let argPlayerMove = getMoveName(playerInput);
 console.log('Przypisanie wyboru gracza')
@@ -62,5 +65,6 @@ console.log('Przypisanie wyboru gracza')
 printMessage('Twój ruch to: ' + argPlayerMove);
 console.log('Wywołanie: Ruch gracza')
 
+console.log('Wybrane ruchy: ' + 'Komputer: ' + argComputerMove + ', Gracz: ' + argPlayerMove);
 printMessage('Status: ' + displayResult(argComputerMove, argPlayerMove));
 console.log('Wywołanie: Wyświetlenie wyniku')
