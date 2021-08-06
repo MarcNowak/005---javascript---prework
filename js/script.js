@@ -17,8 +17,6 @@ function getMoveName(argMoveId){
   }
 }
 
-console.log('wywołano: argMoveId')
-
 function displayResult(argComputerMove, argPlayerMove){
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
@@ -42,26 +40,27 @@ function displayResult(argComputerMove, argPlayerMove){
   else {
     printMessage('Tym razem przegrywasz :(');
   }
+
+  return 'gra zakończona.'
 }
 
-let randomNumber = Math.floor(Math.random() * 3 + 1);
+console.log('Wywołanie: Losuję liczbę')
 
-console.log('Wylosowana liczba to: ' + randomNumber);
+let randomNumber = Math.floor(Math.random() * 3 + 1);
+console.log('Wywołanie: Wylosowana liczba  / ruch komputera to: ' + randomNumber);
 
 let argComputerMove = getMoveName(randomNumber);
-
 printMessage('Ruch komputera to: ' + argComputerMove);
 
-console.log('wywołano: Wybor numeru przez gracza')
-
+console.log('Wywołanie: Wybór liczby przez gracza')
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+console.log('Wywołanie: Gracz wpisał: ' + playerInput);
 
-console.log('Gracz wpisał: ' + playerInput);
-
-let argPlayerMove = getMoveName(randomNumber);
+let argPlayerMove = getMoveName(playerInput);
+console.log('Przypisanie wyboru gracza')
 
 printMessage('Twój ruch to: ' + argPlayerMove);
-console.log('wywołano: twój ruch')
+console.log('Wywołanie: Ruch gracza')
 
-printMessage('wynik to: ' + displayResult(argComputerMove, argPlayerMove));
-console.log('wywołano: wygrywasz / przegrywasz')
+printMessage('Status: ' + displayResult(argComputerMove, argPlayerMove));
+console.log('Wywołanie: Wyświetlenie wyniku')
