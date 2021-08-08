@@ -1,0 +1,39 @@
+/* Variables */
+
+$font-main: 'Nosifer', sans-serif;
+$font-text: 'Rubik Mono One', sans-serif;
+
+
+/* Global */
+
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+h1 {
+    font-family: $font-main;
+    color: red;
+}
+
+h3, p, .message {
+    font-family: $font-text;
+}
+
+.container i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+    border-radius: 50%;
+    
+    text-align: center;
+    margin: 0 7px;
+}
+
+.message {
+    padding-top: 30px;
+}

@@ -3,12 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<div id="buttons"></div>
-		<div id="messages"></div>
+		<div class="header">
+			<h1>Kamień, papier, nożyce</h1>
+			<h3>Czyli krew pot i łzy przelane za Java Script</h3>
+		</div>
+		<div class="rules">
+			<p>Po prostu naciśnij dowolny przycisk poniżej i ufaj, że los Ci sprzyja:)</p>
+			<p>Aby przerwać najlepiej naciśnij ALT+F4 lub kliknij <a href="https://bfy.tw/RQK5">tutaj</a></p>
+		</div>
+		<div class="button" id="buttons">
+			<button id="play-rock"><i class="fas fa-gem"></i></button>
+			<button id="play-paper"><i class="fas fa-toilet-paper"></i></button>
+			<button id="play-scissors"><i class="fas fa-cut"></i></button>
+		</div>
+		<div class="message" id="messages"></div>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>

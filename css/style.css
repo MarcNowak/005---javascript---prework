@@ -1,0 +1,32 @@
+/* Variables */
+/* Global */
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Nosifer", sans-serif;
+  color: red;
+}
+
+h3, p, .message {
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.container i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 7px;
+}
+
+.message {
+  padding-top: 30px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBTUEsV0FBQTtBQUVBO0VBQ0ksaUJBQWlCO0VBQ2pCLGVBQWU7RUFDZixjQUFjO0VBQ2Qsa0JBQWtCO0FDTHRCOztBRFNBO0VBQ0ksa0NBZjZCO0VBZ0I3QixVQUFVO0FDTmQ7O0FEU0E7RUFDSSx5Q0FuQm9DO0FDYXhDOztBRFNBO0VBQ0ksV0FBVztFQUNYLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsZUFBZTtFQUNmLGtCQUFrQjtFQUVsQixrQkFBa0I7RUFDbEIsYUFBYTtBQ1BqQjs7QURVQTtFQUNJLGlCQUFpQjtBQ1ByQiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
