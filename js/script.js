@@ -26,16 +26,19 @@ function playGame(playerInput){
       if(argComputerMove == 'kamień' && argPlayerMove == 'papier')
       {
         printMessage('Ty wygrywasz!');
+        playerScore=playerScore+1;
       }
 
       else if(argComputerMove == 'papier' && argPlayerMove == 'nożyce')
       {
         printMessage('Ty wygrywasz!');
+        playerScore=playerScore+1;
       }
 
       else if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień') 
       {
         printMessage('Ty wygrywasz!');
+        playerScore=playerScore+1;
       }
 
       else if(argComputerMove == argPlayerMove)
@@ -45,6 +48,7 @@ function playGame(playerInput){
 
       else {
         printMessage('Tym razem przegrywasz :(');
+        computerScore=computerScore+1;
       }
 
       return 'spróbuj ponownie.'
@@ -64,12 +68,20 @@ function playGame(playerInput){
 
 document.getElementById('play-rock').addEventListener('click', function(){
   playGame(1);
+  showResult ("Gracz: " + playerScore + " -" + " Komputer: " + computerScore);
 });
 
 document.getElementById('play-paper').addEventListener('click', function(){
   playGame(2);
+  showResult ("Gracz: " + playerScore + " -" + " Komputer: " + computerScore);
 });
 
 document.getElementById('play-scissors').addEventListener('click', function(){
   playGame(3);
+  showResult ("Gracz: " + playerScore + " -" + " Komputer: " + computerScore);
 });
+
+let playerScore = 0;
+let computerScore = 0;
+
+showResult ("Gracz: " + playerScore + " -" + " Komputer: " + computerScore);

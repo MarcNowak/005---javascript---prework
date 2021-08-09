@@ -14,7 +14,7 @@ $font-text: 'Rubik Mono One', sans-serif;
 }
 
 
-h1 {
+h1, .results {
     font-family: $font-main;
     color: red;
 }
@@ -35,5 +35,9 @@ h3, p, .message {
 }
 
 .message {
+    padding-top: 30px;
+}
+
+.results {
     padding-top: 30px;
 }
